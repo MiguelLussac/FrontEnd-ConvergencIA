@@ -1,0 +1,21 @@
+:root {
+            --bg-color: #f7f8f9;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --primary-blue: #326b8e;
+            --gradient-start: #2c5c7d;
+            --gradient-end: #5798c5;
+            --card-border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+        }
