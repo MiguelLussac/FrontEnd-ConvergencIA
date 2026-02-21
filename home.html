@@ -1,11 +1,243 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home(teste)</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --bg-color: #f7f8f9;
+            --text-main: #1f2937;
+            --text-muted: #6b7280;
+            --primary-blue: #326b8e;
+            --gradient-start: #2c5c7d;
+            --gradient-end: #5798c5;
+            --card-border: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+        }
+
+        /* --- Cabeçalho --- */
+        header {
+            background-color: #ffffff;
+            padding: 24px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .header-esquerda h1 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 4px;
+            color: #111827;
+        }
+
+        .header-esquerda p {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        .header-direita {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .icones-header {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #374151;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pontinho-notificacao-sino {
+            position: absolute;
+            top: 0px;
+            right: 2px;
+            width: 8px;
+            height: 8px;
+            background-color: #a855f7; /* Ponto roxo */
+            border-radius: 50%;
+            border: 2px solid #ffffff;
+        }
+
+        /* --- Conteúdo Principal --- */
+        main {
+            padding: 32px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Banner de IA */
+        .banner-ia {
+            background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+            border-radius: 12px;
+            padding: 24px;
+            display: flex;
+            gap: 20px;
+            color: #ffffff;
+            margin-bottom: 24px;
+            align-items: flex-start;
+        }
+
+        .caixa-icone-ia {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 12px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sugestao-ia h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .sugestao-ia p {
+            font-size: 14px;
+            margin-bottom: 16px;
+            color: #e2e8f0;
+        }
+
+        .botao-sugestao-ia {
+            background-color: #ffffff;
+            color: var(--primary-blue);
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .botao-sugestao-ia:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Cartões de Estatísticas */
+        .container-status {
+            display: flex;
+            gap: 24px;
+        }
+
+        .card-status {
+            flex: 1;
+            background-color: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .status-icone {
+            background-color: var(--bg-color);
+            padding: 12px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+        }
+
+        .status-info span {
+            display: block;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .status-info strong {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            color: #111827;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <div class="header-esquerda">
+            <h1>Olá, Maria! 👋</h1>
+            <p>Segunda-feira, 17 de Novembro</p>
+        </div>
+        <div class="header-direita">
+            <button class="icones-header">
+                <i data-lucide="bell" stroke-width="1.5"></i>
+                <span class="pontinho-notificacao-sino"></span>
+            </button>
+            <button class="icones-header">
+                <i data-lucide="settings" stroke-width="1.5"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-ia">
+            <div class="caixa-icone-ia">
+                <i data-lucide="sparkles" size="24" stroke-width="1.5"></i>
+            </div>
+            <div class="sugestao-ia">
+                <h2>Sugestão de IA</h2>
+                <p>Maria está com alta concentração hoje! Aproveite para trabalhar exercícios de matemática.</p>
+                <button class="botao-sugestao-ia">Ver atividades sugeridas</button>
+            </div>
+        </section>
+
+        <section class="container-status">
+            <div class="card-status">
+                <div class="status-icone">
+                    <i data-lucide="trending-up" size="20" stroke-width="2"></i>
+                </div>
+                <div class="status-info">
+                    <span>Progresso Semanal</span>
+                    <strong>85%</strong>
+                </div>
+            </div>
+
+            <div class="card-status">
+                <div class="status-icone">
+                    <i data-lucide="clock" size="20" stroke-width="2"></i>
+                </div>
+                <div class="status-info">
+                    <span>Tempo de Estudo</span>
+                    <strong>2h 15m</strong>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
 </body>
 </html>
