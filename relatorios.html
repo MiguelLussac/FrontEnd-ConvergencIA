@@ -693,7 +693,7 @@
                     <span class="metric-icon">📈</span>
                     Evolução Geral
                 </div>
-                <div class="metric-value">+18%</div>
+                <div id="evol" class="metric-value">+18%</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
 
@@ -703,7 +703,7 @@
                     <span class="metric-icon">🎯</span>
                     Metas Alcançadas
                 </div>
-                <div class="metric-value">12/17</div>
+                <div id="metas" class="metric-value">12/17</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
 
@@ -713,7 +713,7 @@
                     <span class="metric-icon">⏱️</span>
                     Tempo de Estudo
                 </div>
-                <div class="metric-value">18h 45m</div>
+                <div id="tempo" class="metric-value">18h 45m</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
 
@@ -723,7 +723,7 @@
                     <span class="metric-icon">📊</span>
                     Engajamento
                 </div>
-                <div class="metric-value">86%</div>
+                <div id="engaj" class="metric-value">92%</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
         </div>
@@ -739,12 +739,12 @@
                         <span class="metric-icon">📖</span>
                         Leitura
                     </div>
-                    <div class="progress-percentage">
+                    <div id="leitura" class="progress-percentage">
                         88% <span>↗</span>
                     </div>
                 </div>
                 <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 88%"></div>
+                    <div id="leitura-bar" class="progress-bar" style="width: 88%"></div>
                 </div>
                 <div class="progress-info">+12% vs período anterior</div>
             </div>
@@ -756,12 +756,12 @@
                         <span class="metric-icon">✏️</span>
                         Escrita
                     </div>
-                    <div class="progress-percentage">
+                    <div id="escrita" class="progress-percentage">
                         75% <span>↗</span>
                     </div>
                 </div>
                 <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 75%; background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);"></div>
+                    <div id="escrita-bar" class="progress-bar" style="width: 75%; background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);"></div>
                 </div>
                 <div class="progress-info">+8% vs período anterior</div>
             </div>
@@ -773,12 +773,12 @@
                         <span class="metric-icon">📐</span>
                         Matemática
                     </div>
-                    <div class="progress-percentage">
+                    <div id="matematica" class="progress-percentage">
                         82% <span>↗</span>
                     </div>
                 </div>
                 <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 82%; background: linear-gradient(90deg, #9f7aea 0%, #805ad5 100%);"></div>
+                    <div id="matematica-bar" class="progress-bar" style="width: 82%; background: linear-gradient(90deg, #9f7aea 0%, #805ad5 100%);"></div>
                 </div>
                 <div class="progress-info">+15% vs período anterior</div>
             </div>
@@ -790,12 +790,12 @@
                         <span class="metric-icon">📋</span>
                         Organização
                     </div>
-                    <div class="progress-percentage">
+                    <div id="organizacao" class="progress-percentage">
                         70% <span>↗</span>
                     </div>
                 </div>
                 <div class="progress-bar-container">
-                    <div class="progress-bar" style="width: 70%; background: linear-gradient(90deg, #ed64a6 0%, #d53f8c 100%);"></div>
+                    <div id="organizacao-bar" class="progress-bar" style="width: 70%; background: linear-gradient(90deg, #ed64a6 0%, #d53f8c 100%);"></div>
                 </div>
                 <div class="progress-info">+10% vs período anterior</div>
             </div>
@@ -921,6 +921,10 @@
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
+                // Chama a função correta
+                if(this.textContent.includes('Semana')) exibir_sem();
+                else if(this.textContent.includes('Mês')) exibir_mes();
+                else if(this.textContent.includes('Trimestre')) exibir_tri();
             });
         });
 
@@ -939,5 +943,6 @@
             // Aqui você poderia adicionar a lógica real para gerar o PDF
         });
     </script>
+<script src="dados.js"></script>
 </body>
 </html>
