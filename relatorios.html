@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios - Plataforma Educacional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -26,94 +28,78 @@
         }
 
         /* Header */
-        .header {
-            background: linear-gradient(135deg, #2c5282 0%, #3d6fa8 100%);
+       .header {
+            width: 100%;
+            background: linear-gradient(90deg, #2c5f7c, #3f7fa3);
+            padding: 48px 70px;
             color: white;
-            padding: 30px 20px;
+        }
+
+        .header-content {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            flex-shrink: 0;
-            width: 100%;
-            min-height: auto;
         }
 
-        .header-left {
-            flex: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
+        /* LADO ESQUERDO */
         .header-left h1 {
-            font-size: 28px;
+            font-size: 20px;
             font-weight: 600;
-            margin-bottom: 8px;
+            margin: 0 0 6px 0;
         }
 
         .header-left p {
             font-size: 14px;
-            opacity: 0.9;
-            margin-bottom: 20px;
+            font-weight: 400;
+            opacity: 0.85;
+            margin: 0 0 20px 0;
         }
 
+        /* BOTÕES DE FILTRO */
         .filter-buttons {
             display: flex;
             gap: 12px;
-            flex-wrap: wrap;
         }
 
         .filter-btn {
             padding: 10px 20px;
+            border-radius: 22px;
             border: none;
-            border-radius: 25px;
             font-size: 14px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white;
             font-weight: 500;
-            white-space: nowrap;
+            cursor: pointer;
+            background: rgba(255,255,255,0.25);
+            color: white;
         }
 
         .filter-btn.active {
-            background-color: white;
-            color: #2c5282;
+            background: white;
+            color: #2c5f7c;
         }
 
-        .filter-btn:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .filter-btn.active:hover {
-            background-color: white;
-        }
-
+        /* LADO DIREITO (ÍCONES) */
         .header-right {
             display: flex;
-            gap: 12px;
-            flex-shrink: 0;
+            gap: 14px;
         }
 
         .icon-btn {
-            background-color: rgba(255, 255, 255, 0.2);
+            width: 42px;
+            height: 42px;
+            border-radius: 14px;
             border: none;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
+            background: rgba(255, 255, 255, 0.25);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            transition: background-color 0.3s ease;
-            flex-shrink: 0;
+            cursor: pointer;
+            transition: 0.2s ease;
         }
 
-        .icon-btn:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
+        .icon-btn i {
+            color: #ffffff;
+            font-size: 16px;
+         }
         /* Main Content */
         .container {
             flex: 1;
@@ -497,7 +483,10 @@
         .export-btn:active {
             transform: translateY(0);
         }
-
+        .export-btn i {
+            font-size: 16px;
+            color: white;
+        } 
         /* Achievements Grid (old) */
 
         /* Bottom Navigation */
@@ -670,21 +659,29 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="header">
+   <div class="header">
+    <div class="header-content">
         <div class="header-left">
             <h1>Relatórios</h1>
             <p>Acompanhamento e evolução</p>
+
             <div class="filter-buttons">
-                <button class="filter-btn active">Semana</button>
-                <button class="filter-btn">Mês</button>
+                <button class="filter-btn">Semana</button>
+                <button class="filter-btn active">Mês</button>
                 <button class="filter-btn">Trimestre</button>
             </div>
         </div>
+
         <div class="header-right">
-            <button class="icon-btn">↗</button>
-            <button class="icon-btn">⬇</button>
+            <button class="icon-btn">
+                <i class="fa-solid fa-share-nodes"></i>
+            </button>
+            <button class="icon-btn">
+                <i class="fa-solid fa-download"></i>
+            </button>
         </div>
     </div>
+</div>
 
     <!-- Main Content -->
     <div class="container">
@@ -706,7 +703,7 @@
                     <span class="metric-icon">🎯</span>
                     Metas Alcançadas
                 </div>
-                <div class="metric-value">4/6</div>
+                <div class="metric-value">12/17</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
 
@@ -716,7 +713,7 @@
                     <span class="metric-icon">⏱️</span>
                     Tempo de Estudo
                 </div>
-                <div class="metric-value">5h 30m</div>
+                <div class="metric-value">18h 45m</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
 
@@ -726,7 +723,7 @@
                     <span class="metric-icon">📊</span>
                     Engajamento
                 </div>
-                <div class="metric-value">92%</div>
+                <div class="metric-value">86%</div>
                 <div class="metric-change">Comparativo anterior</div>
             </div>
         </div>
@@ -804,44 +801,32 @@
             </div>
         </div>
 
-        <!-- Atividade Semanal -->
+        <!-- Atividade Mensal -->
         <div class="section-container">
             <div class="activity-section">
-                <h2>📅 Atividade Semanal</h2>
+                <h2>📅 Atividade Mensal</h2>
                 <div class="chart-container">
                     <div class="chart">
                         <div class="bar-wrapper">
                             <div class="bar-item">
-                                <div class="bar" style="height: 40%;" title="Segunda"></div>
-                                <span class="bar-label">Seg</span>
+                                <div class="bar" style="height: 40%;" title="Semana 1"></div>
+                                <span class="bar-label">Sem 1</span>
                             </div>
                             <div class="bar-item">
-                                <div class="bar" style="height: 65%;" title="Terça"></div>
-                                <span class="bar-label">Ter</span>
+                                <div class="bar" style="height: 65%;" title="Semana 2"></div>
+                                <span class="bar-label">Sem 2</span>
                             </div>
                             <div class="bar-item">
-                                <div class="bar" style="height: 55%;" title="Quarta"></div>
-                                <span class="bar-label">Qua</span>
+                                <div class="bar" style="height: 55%;" title="Semana 3"></div>
+                                <span class="bar-label">Sem 3</span>
                             </div>
                             <div class="bar-item">
-                                <div class="bar" style="height: 75%;" title="Quinta"></div>
-                                <span class="bar-label">Qui</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 85%;" title="Sexta"></div>
-                                <span class="bar-label">Sex</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 70%;" title="Sábado"></div>
-                                <span class="bar-label">Sáb</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 50%;" title="Domingo"></div>
-                                <span class="bar-label">Dom</span>
+                                <div class="bar" style="height: 75%;" title="Semana 4"></div>
+                                <span class="bar-label">Sem 4</span>
                             </div>
                         </div>
                     </div>
-                    <div class="chart-info">Tempo médio diário: 1h 15m</div>
+                    <div class="chart-info">Tempo médio diário: 2h 15m</div>
                 </div>
             </div>
         </div>
@@ -898,10 +883,11 @@
         </div>
 
         <!-- Export Button -->
-        <div class="section-container" style="margin-bottom: 100px;">
-            <button class="export-btn">
-                <span>⬇️</span> Exportar Relatório Completo (PDF)
-            </button>
+            <div class="section-container" style="margin-bottom: 100px;">
+                <button class="export-btn">
+                    <i class="fa-solid fa-download"></i>
+                    Exportar Relatório Completo (PDF)
+                </button>
         </div>
     </div>
 
