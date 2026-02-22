@@ -11,6 +11,7 @@
     
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="/assets/home.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
 
 </head>
 
@@ -65,9 +66,8 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <section class="metas-container">
+        <section class="metas-container">
             <div class="metas-header">
                 <i data-lucide="bookmark" size="20" stroke-width="2"></i>
                 <h2>Metas de Hoje</h2>
@@ -159,8 +159,38 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <script>
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <a href="#" class="nav-item active">
+                <i data-lucide="home" stroke-width="2"></i>
+                <span>Início</span>
+            </a>
+            
+            <a href="/pages/pei.html" class="nav-item">
+                <i data-lucide="target" stroke-width="2"></i>
+                <span>PEI</span>
+            </a>
+            
+            <a href="/pages/estudos.html" class="nav-item">
+                <i data-lucide="book-open" stroke-width="2"></i>
+                <span>Estudos</span>
+            </a>
+            
+            <a href="/pages/relatorios.html" class="nav-item">
+                <i data-lucide="bar-chart-2" stroke-width="2"></i>
+                <span>Relatórios</span>
+            </a>
+            
+            <a href="/pages/perfil.html" class="nav-item">
+                <i data-lucide="user" stroke-width="2"></i>
+                <span>Perfil</span>
+            </a>
+        </div>
+    </nav>
+    
+    <script>
         lucide.createIcons();
     </script>
 </body>
