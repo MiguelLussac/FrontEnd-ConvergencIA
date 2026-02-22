@@ -1,0 +1,254 @@
+:root {
+  --primary-blue: #3b82f6;
+  --bg-color: #f8fafc;
+  --card-border: #e2e8f0;
+  --text-muted: #64748b;
+  --gradient-start: #6366f1;
+  --gradient-end: #a855f7;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+/* --- Cabeçalho --- */
+header {
+  background-color: #ffffff;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.header-esquerda h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #111827;
+}
+
+.header-esquerda p {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.header-direita {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icones-header {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #374151;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pontinho-notificacao-sino {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #a855f7; /* Ponto roxo */
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/* --- Conteúdo Principal --- */
+main {
+  padding: 32px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Banner de IA */
+.banner-ia {
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  gap: 20px;
+  color: #ffffff;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.caixa-icone-ia {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sugestao-ia h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sugestao-ia p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #e2e8f0;
+}
+
+.botao-sugestao-ia {
+  background-color: #ffffff;
+  color: var(--primary-blue);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.botao-sugestao-ia:hover {
+  background-color: #f1f5f9;
+}
+
+/* Cartões de Estatísticas */
+.container-status {
+  display: flex;
+  gap: 24px;
+}
+
+.card-status {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status-icone {
+  background-color: var(--bg-color);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+}
+
+.status-info span {
+  display: block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.status-info strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* --- Cartão de Metas de Hoje --- */
+.metas-container {
+  background-color: #ffffff;
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px; /* Espaço entre este cartão e os de cima */
+}
+
+.metas-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.metas-header h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.metas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espaço entre cada meta */
+}
+
+/* Flexbox principal de cada item (Texto de um lado, Badge do outro) */
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.bolinha-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Bolinhas coloridas */
+.meta-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.meta-dot.blue {
+  background-color: #4da0d6;
+}
+.meta-dot.purple {
+  background-color: #b594d6;
+}
+.meta-dot.gray {
+  background-color: #d1d5db;
+}
+
+.meta-title {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Status (Badge arredondado) */
+.meta-badge {
+  background-color: #e6e4e9;
+  color: #a481cd;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Barra de progresso (Fundo e Preenchimento) */
+.progresso-meta {
+  background-color: #eaf0f6;
+  height: 6px;
+  border-radius: 4px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.progresso-preenchido {
+  background-color: #4da0d6;
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease; /* Animação suave se a barra mudar de tamanho */
+}
