@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios - Plataforma Educacional</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="/assets/relatiorios.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
 </head>
 
 <body>
@@ -243,28 +247,36 @@
         </div>
     </div>
 
-    <!-- Bottom Navigation -->
     <nav class="bottom-nav">
-        <a href="#" class="nav-item">
-            <span class="nav-icon">🏠</span>
-            <span>Início</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="nav-icon">👁️</span>
-            <span>PEI</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="nav-icon">📚</span>
-            <span>Estudos</span>
-        </a>
-        <a href="#" class="nav-item active">
-            <span class="nav-icon">📊</span>
-            <span>Relatórios</span>
-        </a>
-        <a href="#" class="nav-item">
-            <span class="nav-icon">👤</span>
-            <span>Perfil</span>
-        </a>
+        <div class="nav-container">
+            <a href="/pages/home.html" class="nav-item active">
+                <i data-lucide="home" stroke-width="2"></i>
+                <span>Início</span>
+            </a>
+            
+            <a href="/pages/pei.html" class="nav-item">
+                <i data-lucide="target" stroke-width="2"></i>
+                <span>PEI</span>
+            </a>
+            
+            <a href="/pages/estudos.html" class="nav-item">
+                <i data-lucide="book-open" stroke-width="2"></i>
+                <span>Estudos</span>
+            </a>
+            
+            <a href="#" class="nav-item">
+                <i data-lucide="bar-chart-2" stroke-width="2"></i>
+                <span>Relatórios</span>
+            </a>
+            
+            <a href="/pages/perfil.html" class="nav-item">
+                <i data-lucide="user" stroke-width="2"></i>
+                <span>Perfil</span>
+            </a>
+            <script>
+                lucide.createIcons();
+            </script>
+        </div>
     </nav>
 
     <script>
@@ -277,15 +289,6 @@
                 if(this.textContent.includes('Semana')) exibir_sem();
                 else if(this.textContent.includes('Mês')) exibir_mes();
                 else if(this.textContent.includes('Trimestre')) exibir_tri();
-            });
-        });
-
-        // Interatividade da navegação inferior
-        document.querySelectorAll('.nav-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-                this.classList.add('active');
             });
         });
 
