@@ -252,3 +252,79 @@ main {
   border-radius: 4px;
   transition: width 0.3s ease; /* Animação suave se a barra mudar de tamanho */
 }
+
+/* --- Cartão de Atividades Recentes --- */
+        .card-atividades {
+            background-color: #ffffff;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+
+        .atividades-titulo {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .atividades-lista {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* Espaço entre cada linha de atividade */
+        }
+
+        /* Flexbox da linha inteira */
+        .atividade-item {
+            background-color: #f8fafc; /* Fundo cinza bem claro */
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            justify-content: space-between; /* Empurra a % para a direita */
+            align-items: center; /* Alinha tudo ao centro verticalmente */
+        }
+
+        /* Flexbox do lado esquerdo (Ícone + Textos) */
+        .atividade-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        /* O quadrado do ícone */
+        .atividade-icone {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Flexbox para colocar título em cima e tempo embaixo */
+        .atividade-detalhes {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .nome-atividade {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1f2937;
+        }
+
+        .tempo-atividade {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Badge da porcentagem */
+        .atividade-score {
+            color: #ffffff;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
