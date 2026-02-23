@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />'
+    <link rel="stylesheet" href="assets/login.css">k
+    <title>ConvergêncIA</title>
+
+  </head>
+  <body>
+    <!-- ═══ SPLASH ═══ -->
+    <div id="splash">
+      <div class="splash-bg"></div>
+      <div class="splash-logo"><span class="monster">🧠</span></div>
+      <div class="splash-title">Convergênc<span>ia</span></div>
+      <div class="splash-sub">
+        Educação personalizada para alunos neurodivergentes
+      </div>
+      <div class="splash-btns">
+        <button class="btn-splash" onclick="showApp('login')">Entrar</button>
+        <button class="btn-splash" onclick="showApp('register')">
+          Cadastrar-se
+        </button>
+      </div>
+      <div class="splash-hint">
+        Bem-vindo! Faça login ou crie sua conta para começar.
+      </div>
+      <div class="splash-help">?</div>
+    </div>
+
+    <!-- ═══ APP ═══ -->
+    <div id="app">
+      <div class="app-header">
+        <button class="back" onclick="goBack()" title="Voltar">&#8592;</button>
+        <div class="brand">Convergênc<span>IA</span></div>
+      </div>
+
+      <div class="card-wrap">
+        <div class="card">
+          <!-- LOGIN VIEW -->
+          <div class="view" id="view-login">
+            <div class="card-logo"><span class="monster">🧠</span></div>
+            <div class="card-title">Bem-vindo de volta!</div>
+            <div class="card-sub">
+              Entre com suas credenciais para continuar
+            </div>
+
+            <div class="field">
+              <label for="login-email">E-mail</label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+              />
+              <div class="err-msg" id="login-email-err">
+                Por favor, insira um e-mail válido.
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="login-pw">Senha</label>
+              <div class="field-pw">
+                <input
+                  type="password"
+                  id="login-pw"
+                  placeholder="Digite sua senha"
+                  autocomplete="current-password"
+                />
+                <button
+                  class="toggle-pw"
+                  onclick="togglePw('login-pw', this)"
+                  type="button"
+                  tabindex="-1"
+                >
+                  👁
+                </button>
+              </div>
+              <div class="err-msg" id="login-pw-err">
+                A senha não pode estar vazia.
+              </div>
+            </div>
+
+            <a class="forgot" onclick="showForgot()">Esqueceu sua senha?</a>
+
+            <button class="btn-main" onclick="handleLogin()">Entrar</button>
+            <div class="terms-note">
+              Ao entrar você concorda com os nossos
+              <a href="#">Termos de uso</a> e
+              <a href="#">Política de privacidade</a>.
+            </div>
+          </div>
+
+          <!-- REGISTER VIEW -->
+          <div class="view" id="view-register">
+            <div class="card-title">Crie seu cadastro</div>
+            <div class="card-sub">
+              Preencha o formulário abaixo com seus dados cadastrais para
+              começar sua jornada na ConvergêncIA.
+            </div>
+
+            <div class="role-toggle">
+              <label>
+                <input type="radio" name="role" value="aluno" checked />
+                <span class="radio-dot"></span>
+                Aluno
+              </label>
+              <label>
+                <input type="radio" name="role" value="professor" />
+                <span class="radio-dot"></span>
+                Professor
+              </label>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="reg-nome">Nome</label>
+                <input
+                  type="text"
+                  id="reg-nome"
+                  placeholder="Nome"
+                  autocomplete="given-name"
+                />
+                <div class="err-msg" id="reg-nome-err">Campo obrigatório.</div>
+              </div>
+              <div class="field">
+                <label for="reg-sobrenome">Sobrenome</label>
+                <input
+                  type="text"
+                  id="reg-sobrenome"
+                  placeholder="Sobrenome"
+                  autocomplete="family-name"
+                />
+                <div class="err-msg" id="reg-sobrenome-err">
+                  Campo obrigatório.
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reg-cpf">CPF</label>
+              <input
+                type="text"
+                id="reg-cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+                autocomplete="off"
+              />
+              <div class="err-msg" id="reg-cpf-err">CPF inválido.</div>
+            </div>
+
+            <div class="field">
+              <label for="reg-tel">Telefone</label>
+              <input
+                type="tel"
+                id="reg-tel"
+                placeholder="(DDD) Telefone"
+                maxlength="15"
+                autocomplete="tel"
+              />
+              <div class="err-msg" id="reg-tel-err">Telefone inválido.</div>
+            </div>
+
+            <div class="field">
+              <label for="reg-email">E-mail</label>
+              <input
+                type="email"
+                id="reg-email"
+                placeholder="seu@email.com"
+                autocomplete="email"
+              />
+              <div class="err-msg" id="reg-email-err">
+                Por favor, insira um e-mail válido.
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="reg-pw">Senha</label>
+              <div class="field-pw">
+                <input
+                  type="password"
+                  id="reg-pw"
+                  placeholder="Mínimo de 6 caracteres"
+                  autocomplete="new-password"
+                />
+                <button
+                  class="toggle-pw"
+                  onclick="togglePw('reg-pw', this)"
+                  type="button"
+                  tabindex="-1"
+                >
+                </button>
+              </div>
+              <div class="err-msg" id="reg-pw-err">
+                Senha deve ter no mínimo 6 caracteres.
+              </div>
+            </div>
+
+            <div class="terms-note" style="margin-bottom: 20px">
+              Ao preencher o formulário acima você concorda com os nossos
+              <a href="#">Termos de uso</a> e
+              <a href="#">Política de privacidade</a>.
+            </div>
+
+            <button class="btn-main" onclick="handleRegister()">
+              Cadastrar-se
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+    
+    <script src="js/login.js"></script>
