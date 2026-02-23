@@ -16,15 +16,15 @@
 | Membro                           | Papel                             | Responsabilidades                                                         |
 | -------------------------------- | --------------------------------- | ------------------------------------------------------------------------- |
 | Abraão Filipi Dos Santos         | Product Owner                     | Definir funcionalidades do app, priorizar backlog e validar entregas      |
-| Aquiles Pereira Dos Santos       | Scrum Master                      | Organizar sprints, acompanhar progresso e remover impedimentos            |
-| Arthur Abelardo Campos Da Costa  | Front-end Developer (UI)          | Implementação das telas principais                                        |
-| Danilo Gabriel Diniz E Silva     | Front-end Developer (Lógica)      | Gerenciamento de estado e regras da aplicação                             |
-| Lucas Aprigio Dos Santos         | Front-end Developer (Componentes) | Criação de componentes reutilizáveis                                      |
-| Marcio Aureliano Pedro Da Silva  | Front-end Developer (Integração)  | Integração entre páginas, rotas e simulação de dados (mock/localStorage)  |
-| Miguel Pereira De Lemos          | UX/UI Designer                    | Protótipo no Figma, design system e experiência do usuário                |
-| Miguel Victor Lussac Barboza     | QA (Quality Assurance)            | Testes funcionais, validação de responsividade e checklist de qualidade   |
-| Pedro Pessôa De Albuquerque Neto | DevOps Front-end                  | Configuração do repositório, versionamento (Git), deploy (Vercel/Netlify) |
-| Thayna Vercosa De Andrade        | Analista de Requisitos            | Documentação funcional, histórias de usuário e critérios de aceitação     |
+| Aquiles Pereira Dos Santos       | Front-end Developer               | Desenvolvimento e suporte nas funcionalidades do front-end            | ok
+| Arthur Abelardo Campos Da Costa  | QA (Quality Assurance)            | Testes funcionais, validação de responsividade e checklist de qualidade   | ok
+| Danilo Gabriel Diniz E Silva     | Front-end Developer (Líder Técnico) | Implementação das páginas, interações com JavaScript, organização estrutural do projeto e suporte técnico  | ok
+| Lucas Aprigio Dos Santos         | Front-end Developer | Implementação de componentes e ajustes de interface                       | ok
+| Marcio Aureliano Pedro Da Silva  | Front-end Developer (Integração)  | Suporte no desenvolvimento das páginas e organização de arquivos  | ok
+| Miguel Pereira De Lemos          | Analista de Requisitos            | Documentação funcional, histórias de usuário e critérios de aceitação  | ok
+| Miguel Victor Lussac Barboza     | Front-end Developer (Estrutura e Componentes)| Criação da estrutura inicial, navbar global, desenvolvimento da Home e componentes reutilizáveis | ok
+| Pedro Pessôa De Albuquerque Neto | DevOps Front-end                  | Desenvolvimento da página de relatórios e integração com a navegação | ok
+| Thayna Vercosa De Andrade        | UI Designer / Scrum Master        | Definição da identidade visual, escolha de cores e tipografia, organização das sprints e acompanhamento das tarefas | ok
 
 
 ## 📊 Quadro de Gerenciamento das Atividades
@@ -33,27 +33,7 @@ Ferramenta utilizada: Trello
 🔗 Link do quadro:
 https://trello.com/seu-quadro-aqui
 
-## 📅 Planejamento Semanal
-
-### Semana 1
-- Definição do escopo
-- Levantamento de requisitos
-- Criação do protótipo no Figma
-
-### Semana 2
-- Estrutura do projeto
-- Configuração do ambiente
-- Desenvolvimento do cadastro e login
-
-### Semana 3 
-- Implementação das funcionalidades principais
-- Gerenciamento de estado (Context API / Redux se usar)
-- Simulação de API (mock ou localStorage)
-
-### Semana 4
-- Testes
-- Ajustes finais
-- Deploy da aplicação
+## 📅 [Planejamento Semanal](https://www.figma.com/board/LmrUK4OD2YLkV5m1wYaFw2/Quadro-de-Planejamento---Converg%C3%AAncIA?node-id=0-1&p=f)
 
 ## ⚠️ Mapeamento de Riscos
 | Risco                       | Impacto | Responsável   | Plano de Contingência          |
