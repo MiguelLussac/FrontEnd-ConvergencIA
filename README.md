@@ -23,7 +23,7 @@
 | Marcio Aureliano Pedro Da Silva  | Front-end Developer (Integração)  | Suporte no desenvolvimento das páginas e organização de arquivos  | ok
 | Miguel Pereira De Lemos          | Analista de Requisitos            | Documentação funcional, histórias de usuário e critérios de aceitação  | ok
 | Miguel Victor Lussac Barboza     | Front-end Developer (Estrutura e Componentes)| Criação da estrutura inicial, navbar global, desenvolvimento da Home e componentes reutilizáveis | ok
-| Pedro Pessôa De Albuquerque Neto | DevOps Front-end                  | Desenvolvimento da página de relatórios e integração com a navegação | ok
+| Pedro Pessôa De Albuquerque Neto | Front-end Developer                  | Desenvolvimento da página de relatórios e integração com a navegação | ok
 | Thayna Vercosa De Andrade        | UI Designer / Scrum Master        | Definição da identidade visual, escolha de cores e tipografia, organização das sprints e acompanhamento das tarefas | ok
 
 
@@ -39,8 +39,8 @@ https://trello.com/seu-quadro-aqui
 | Risco                       | Impacto | Responsável   | Plano de Contingência          |
 | --------------------------- | ------- | ------------- | ------------------------------ |
 | Atraso na entrega           | Alto    | Scrum Master  | Replanejamento da sprint       |
-| Falta de comunicação        | Médio   | Product Owner | Reuniões semanais obrigatórias |
-| Problemas técnicos          | Alto    | DevOps        | Ambiente de testes separado    |
+| Falta de comunicação        | Médio   | Product Owner | Reuniões semanais |
+| Problemas técnicos          | Alto    | Líder Técnico | Ambiente de testes separado    |
 | Indisponibilidade de membro | Médio   | Scrum Master  | Redistribuição de tarefas      |
 
 ## ✅ Checklist de Qualidade (Definição de Pronto)
