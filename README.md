@@ -76,9 +76,3 @@ https://trello.com/seu-quadro-aqui
 ### 🔗 Link do protótipo:
 [Protótipo no Figma](https://www.figma.com/make/lSAyoStWWD8fD3OFGbn0N3/Plataforma-Educacional-Inclusiva?p=f&t=s0eBDdJFzvId5Cbg-0&fullscreen=1)
 
-- Telas desenvolvidas:
-- Tela de Login
-- Tela de Cadastro
-- Dashboard principal
-- Quadro Kanban
-- Tela de criação/edição de tarefas
