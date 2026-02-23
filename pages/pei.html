@@ -1,52 +1,418 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PEI - Plano Educacional Individualizado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="/assets/navbar.css">
-
-    <title>PEI</title>
-</head>
-<body>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="header-esquerda">
+        <h1>Plano Educacional 🎯</h1>
+        <p>Individualizado - Maria Silva</p>
+      </div>
+      <div class="header-direita">
+        <button class="icones-header">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+          </svg>
+          <span class="pontinho-notificacao-sino"></span>
+        </button>
+        <button class="icones-header">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
 
     <main>
+      <!-- Card resumo PEI -->
+      <div class="pei-header-card">
+        <div class="pei-header-top">
+          <div class="pei-icon">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="6" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <div class="pei-header-info">
+            <h2>Plano Educacional</h2>
+            <p>Individualizado - Maria Silva</p>
+          </div>
+        </div>
+        <div class="pei-stats-grid">
+          <div class="pei-stat-item">
+            <span>Concluídas</span>
+            <strong>12</strong>
+          </div>
+          <div class="pei-stat-item">
+            <span>Em Andamento</span>
+            <strong>5</strong>
+          </div>
+          <div class="pei-stat-item">
+            <span>Planejadas</span>
+            <strong>8</strong>
+          </div>
+        </div>
+      </div>
 
+      <!-- Banner IA -->
+      <section class="banner-ia">
+        <div class="caixa-icone-ia">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M9 18h6" />
+            <path d="M10 22h4" />
+            <path
+              d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"
+            />
+          </svg>
+        </div>
+        <div class="sugestao-ia">
+          <h2>Atualização Sugerida pela IA</h2>
+          <p>
+            Com base no progresso de Maria em leitura (+15% esta semana),
+            sugerimos adicionar exercícios de compreensão de texto mais
+            avançados.
+          </p>
+          <div class="ia-botoes">
+            <button class="botao-ia-aplicar">Aplicar</button>
+            <button class="botao-ia-revisar">Revisar</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metas de Curto Prazo -->
+      <section class="secao-metas">
+        <div class="secao-titulo">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#6b7280"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <h3>Metas de Curto Prazo</h3>
+          <span class="badge-prazo curto">Próximas 4 semanas</span>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio concluido"></div>
+            <div class="meta-card-conteudo">
+              <h4>Melhorar fluência de leitura em textos curtos</h4>
+            </div>
+            <button class="meta-toggle aberto" onclick="toggleMeta(this)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta-card-progresso">
+            <div class="progresso-barra-wrapper">
+              <div class="progresso-barra-fill" style="width: 75%"></div>
+            </div>
+            <div class="progresso-info">
+              <span class="progresso-badge">75% completo</span>
+              <span class="progresso-tempo">Termina em 10 dias</span>
+            </div>
+          </div>
+          <div class="meta-detalhes aberto">
+            <p>
+              Estratégias: leitura diária de 15 minutos, uso de textos de
+              interesse da aluna, cronometragem da leitura para acompanhar
+              evolução.
+            </p>
+          </div>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio"></div>
+            <div class="meta-card-conteudo">
+              <h4>Escrever parágrafos coerentes de 5-7 linhas</h4>
+            </div>
+            <button class="meta-toggle" onclick="toggleMeta(this)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta-card-progresso">
+            <div class="progresso-barra-wrapper">
+              <div class="progresso-barra-fill" style="width: 30%"></div>
+            </div>
+            <div class="progresso-info">
+              <span class="progresso-badge">30% completo</span>
+              <span class="progresso-tempo">Termina em 25 dias</span>
+            </div>
+          </div>
+          <div class="meta-detalhes">
+            <p>
+              Estratégias: uso de organizadores gráficos, escrita guiada com
+              prompts, revisão colaborativa com a professora.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metas de Médio Prazo -->
+      <section class="secao-metas">
+        <div class="secao-titulo">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#6b7280"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+            <polyline points="17 6 23 6 23 12" />
+          </svg>
+          <h3>Metas de Médio Prazo</h3>
+          <span class="badge-prazo medio">2-3 meses</span>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio"></div>
+            <div class="meta-card-conteudo">
+              <h4>Ler e interpretar textos de 2-3 páginas</h4>
+            </div>
+            <button class="meta-toggle" onclick="toggleMeta(this)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta-card-progresso">
+            <div class="progresso-barra-wrapper">
+              <div class="progresso-barra-fill" style="width: 45%"></div>
+            </div>
+            <div class="progresso-info">
+              <span class="progresso-badge">45% completo</span>
+              <span class="progresso-tempo">Termina em 2 meses</span>
+            </div>
+          </div>
+          <div class="meta-detalhes">
+            <p>
+              Estratégias: leitura em voz alta, discussões sobre o texto, mapas
+              mentais.
+            </p>
+          </div>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio"></div>
+            <div class="meta-card-conteudo">
+              <h4>Desenvolver habilidades de organização e planejamento</h4>
+            </div>
+            <button class="meta-toggle" onclick="toggleMeta(this)">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+          </div>
+          <div class="meta-card-progresso">
+            <div class="progresso-barra-wrapper">
+              <div class="progresso-barra-fill" style="width: 20%"></div>
+            </div>
+            <div class="progresso-info">
+              <span class="progresso-badge">20% completo</span>
+              <span class="progresso-tempo">Termina em 3 meses</span>
+            </div>
+          </div>
+          <div class="meta-detalhes">
+            <p>
+              Estratégias: uso de agenda visual, checklist diária, rotinas
+              estruturadas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metas de Longo Prazo -->
+      <section class="secao-metas">
+        <div class="secao-titulo">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#6b7280"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="8" r="6" />
+            <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+          </svg>
+          <h3>Metas de Longo Prazo</h3>
+          <span class="badge-prazo longo">6 meses - 1 ano</span>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio"></div>
+            <div class="meta-card-conteudo">
+              <h4>Alcançar autonomia na leitura de livros adequados à série</h4>
+              <p class="meta-subtexto">
+                Meta anual: ler 12 livros com compreensão acima de 80%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="meta-card">
+          <div class="meta-card-topo">
+            <div class="meta-radio"></div>
+            <div class="meta-card-conteudo">
+              <h4>Produzir textos narrativos completos e coerentes</h4>
+              <p class="meta-subtexto">
+                Meta anual: escrever redações de 1 página com começo, meio e fim
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- NAVBAR -->
     <nav class="bottom-nav">
-        <div class="nav-container">
-            <a href="#" class="nav-item">
-                <i data-lucide="home" stroke-width="2"></i>
-                <span>Início</span>
-            </a>
-            
-            <a href="#" class="nav-item active">
-                <i data-lucide="target" stroke-width="2"></i>
-                <span>PEI</span>
-            </a>
-            
-            <a href="/pages/estudos.html" class="nav-item">
-                <i data-lucide="book-open" stroke-width="2"></i>
-                <span>Estudos</span>
-            </a>
-            
-            <a href="/pages/relatorios.html" class="nav-item">
-                <i data-lucide="bar-chart-2" stroke-width="2"></i>
-                <span>Relatórios</span>
-            </a>
-            
-            <a href="/pages/perfil.html" class="nav-item">
-                <i data-lucide="user" stroke-width="2"></i>
-                <span>Perfil</span>
-            </a>
-        </div>
+      <div class="nav-container">
+        <a href="/pages/home.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Início</span>
+        </a>
+        <a href="#" class="nav-item active">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+          <span>PEI</span>
+        </a>
+        <a href="/pages/estudos.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          <span>Estudos</span>
+        </a>
+        <a href="/pages/relatorios.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
+          <span>Relatórios</span>
+        </a>
+        <a href="/pages/perfil.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span>Perfil</span>
+        </a>
+      </div>
     </nav>
-    
-    <script>
-        lucide.createIcons();
-    </script>
-
-</body>
+  </body>
 </html>
