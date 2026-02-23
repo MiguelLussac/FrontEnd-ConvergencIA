@@ -21,7 +21,7 @@
 | Danilo Gabriel Diniz E Silva     | Front-end Developer (Líder Técnico) | Implementação das páginas, interações com JavaScript, organização estrutural do projeto e suporte técnico  | ok
 | Lucas Aprigio Dos Santos         | Front-end Developer | Implementação de componentes e ajustes de interface                       | ok
 | Marcio Aureliano Pedro Da Silva  | Front-end Developer (Integração)  | Suporte no desenvolvimento das páginas e organização de arquivos  | ok
-| Miguel Pereira De Lemos          | Analista de Requisitos            | Documentação funcional, histórias de usuário e critérios de aceitação  | ok
+| Miguel Pereira De Lemos          | Analista de Requisitos / Documentação           | Documentação funcional, histórias de usuário e critérios de aceitação  | ok
 | Miguel Victor Lussac Barboza     | Front-end Developer (Estrutura e Componentes)| Criação da estrutura inicial, navbar global, desenvolvimento da Home e componentes reutilizáveis | ok
 | Pedro Pessôa De Albuquerque Neto | Front-end Developer                  | Desenvolvimento da página de relatórios e integração com a navegação | ok
 | Thayna Vercosa De Andrade        | UI Designer / Scrum Master        | Definição da identidade visual, escolha de cores e tipografia, organização das sprints e acompanhamento das tarefas | ok
