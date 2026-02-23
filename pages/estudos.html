@@ -1,55 +1,403 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudos - Sala Virtual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/estudos.css"/>
+    <script src="/js/estudos.js"></script>
 
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="/assets/navbar.css">
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <div class="header-esquerda">
+        <h1>Sala Virtual</h1>
+        <p>Suas atividades personalizadas</p>
+      </div>
+      <div class="header-direita">
+        <button class="icone-header">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+            <path
+              d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
 
-    <title>Estudos</title>
-</head>
-<body>
     <main>
+      <!-- Como você está se sentindo hoje -->
+      <div class="humor-card">
+        <p>Como você está se sentindo hoje?</p>
+        <div class="humor-opcoes">
+          <button class="humor-btn ativo" onclick="selecionarHumor(this)">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 13s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            Animado
+          </button>
+          <button class="humor-btn" onclick="selecionarHumor(this)">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="8" y1="13" x2="16" y2="13" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            Normal
+          </button>
+          <button class="humor-btn" onclick="selecionarHumor(this)">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            Confuso
+          </button>
+        </div>
+      </div>
 
+      <!-- Recomendação de IA -->
+      <section class="banner-ia">
+        <div class="ia-icone-box">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+            <path d="M2 17l10 5 10-5" />
+            <path d="M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <div class="ia-texto">
+          <h2>Recomendação de IA</h2>
+          <p>
+            Com base no seu progresso, vamos começar com uma atividade de
+            leitura. Tempo estimado: 15 minutos.
+          </p>
+          <span class="ia-badge">Dificuldade: Média</span>
+        </div>
+      </section>
+
+      <!-- Aulas ao Vivo -->
+      <section class="secao-aulas">
+        <div class="secao-titulo">Aulas ao Vivo</div>
+
+        <!-- Aula 1 - AO VIVO -->
+        <div class="aula-card">
+          <div class="aula-topo">
+            <div class="aula-icone">
+              <svg viewBox="0 0 24 24">
+                <polygon points="23 7 16 12 23 17 23 7" />
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+              </svg>
+            </div>
+            <div class="aula-info">
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin-bottom: 4px;
+                "
+              >
+                <h3>Português: Interpretação de Texto</h3>
+                <span class="badge-ao-vivo">AO VIVO</span>
+              </div>
+              <p class="professor">Prof. Ricardo Santos</p>
+              <div class="aula-horario">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                Hoje às 15:30
+              </div>
+            </div>
+          </div>
+          <div class="aula-tags">
+            <span class="tag duracao">50 min</span>
+            <span class="tag">Recursos adaptados</span>
+          </div>
+          <div class="aula-footer">
+            <button class="btn-lembrete">Agendar Lembrete</button>
+          </div>
+        </div>
+
+        <!-- Aula 2 -->
+        <div class="aula-card">
+          <div class="aula-topo">
+            <div class="aula-icone">
+              <svg viewBox="0 0 24 24">
+                <polygon points="23 7 16 12 23 17 23 7" />
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+              </svg>
+            </div>
+            <div class="aula-info">
+              <h3>Ciências: O Sistema Solar</h3>
+              <p class="professor">Prof. Marina Costa</p>
+              <div class="aula-horario">
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+                Amanhã às 10:00
+              </div>
+            </div>
+          </div>
+          <div class="aula-tags">
+            <span class="tag duracao">45 min</span>
+            <span class="tag">Legendas disponíveis</span>
+          </div>
+          <div class="aula-footer">
+            <button class="btn-lembrete" style="color: var(--text-muted)">
+              Agendar Lembrete
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mini-Games Cognitivos -->
+      <section class="secao-games">
+        <div class="secao-titulo">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+            <line x1="8" y1="21" x2="16" y2="21" />
+            <line x1="12" y1="17" x2="12" y2="21" />
+          </svg>
+          Mini-Games Cognitivos
+        </div>
+        <div class="games-grid">
+          <div class="game-card">
+            <div class="game-thumb mem">🌟</div>
+            <div class="game-info">
+              <h4>Spotlight da Memória</h4>
+              <p>
+                Clique em 3 conceitos que sumirão da tela e repita a sequência.
+              </p>
+              <span class="game-treina"
+                >Treina: Memória de Curto Prazo e Sequencial</span
+              >
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-thumb clas">🤚</div>
+            <div class="game-info">
+              <h4>Classificação Rápida</h4>
+              <p>Arraste a palavra ou imagem para a caixa correta.</p>
+              <span class="game-treina"
+                >Treina: Organização, Classificação e Memória Categórica</span
+              >
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-thumb disc">👆</div>
+            <div class="game-info">
+              <h4>O Essencial no Discurso</h4>
+              <p>
+                Um texto curto é apresentado. Clique para apagar frases que são
+                apenas opiniões.
+              </p>
+              <span class="game-treina"
+                >Treina: Processamento Textual e Discernimento de
+                Informação</span
+              >
+            </div>
+          </div>
+          <div class="game-card">
+            <div class="game-thumb pir">🏔️</div>
+            <div class="game-info">
+              <h4>Pirâmide da Importância</h4>
+              <p>
+                Coloque conceitos em ordem de importância, do mais relevante ao
+                menos.
+              </p>
+              <span class="game-treina"
+                >Treina: Hierarquização e Organização Abstrata</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Atividades Disponíveis -->
+      <section class="secao-atividades">
+        <div class="secao-titulo">Atividades Disponíveis</div>
+
+        <!-- Atividade 1 -->
+        <div class="atividade-card">
+          <div class="atividade-topo">
+            <div class="atividade-icone azul">
+              <svg viewBox="0 0 24 24">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+              </svg>
+            </div>
+            <div class="atividade-info">
+              <h3>Leitura e Compreensão</h3>
+              <p>História: "O Jardim Secreto"</p>
+            </div>
+            <span class="badge-nova">Nova</span>
+          </div>
+          <div class="atividade-tags">
+            <span class="tag duracao">30 min</span>
+            <span class="tag">Texto adaptado</span>
+            <span class="tag">Questões guiadas</span>
+          </div>
+          <div class="atividade-footer">
+            <button class="btn-comecar">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              Começar Atividade
+            </button>
+          </div>
+        </div>
+
+        <!-- Atividade 2 -->
+        <div class="atividade-card">
+          <div class="atividade-topo">
+            <div class="atividade-icone roxo">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <div class="atividade-info">
+              <h3>Matemática: Frações</h3>
+              <p>Exercícios práticos com visual</p>
+            </div>
+          </div>
+          <div class="atividade-tags">
+            <span class="tag duracao">20 min</span>
+            <span class="tag">Suporte visual</span>
+            <span class="tag">Hints disponíveis</span>
+          </div>
+          <div class="atividade-footer">
+            <button class="btn-comecar">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              Começar Atividade
+            </button>
+          </div>
+        </div>
+
+        <!-- Atividade 3 -->
+        <div class="atividade-card">
+          <div class="atividade-topo">
+            <div class="atividade-icone escuro">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 19l7-7 3 3-7 7-3-3z" />
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+                <path d="M2 2l7.586 7.586" />
+                <circle cx="11" cy="11" r="2" />
+              </svg>
+            </div>
+            <div class="atividade-info">
+              <h3>Escrita Criativa</h3>
+              <p>Crie sua própria história</p>
+            </div>
+          </div>
+          <div class="atividade-tags">
+            <span class="tag duracao">25 min</span>
+            <span class="tag">Corretor adaptado</span>
+            <span class="tag">Sugestões de palavras</span>
+          </div>
+          <div class="atividade-footer">
+            <button class="btn-comecar">
+              <svg viewBox="0 0 24 24">
+                <polygon points="5 3 19 12 5 21 5 3" />
+              </svg>
+              Começar Atividade
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Progresso Recente -->
+      <section class="secao-progresso">
+        <div class="progresso-container">
+          <h3>Progresso Recente</h3>
+
+          <div class="progresso-item azul-bg">
+            <div class="progresso-check azul">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="progresso-info">
+              <h4>Exercício de Matemática</h4>
+              <p>Completado com 95%</p>
+            </div>
+            <span class="progresso-emoji">🎉</span>
+          </div>
+
+          <div class="progresso-item roxo-bg">
+            <div class="progresso-check roxo">
+              <svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <div class="progresso-info">
+              <h4>Leitura: Capítulo 2</h4>
+              <p>Completado com 88%</p>
+            </div>
+            <span class="progresso-emoji">👏</span>
+          </div>
+        </div>
+      </section>
     </main>
 
-<section class="navbar">
-
+    <!-- NAVBAR -->
     <nav class="bottom-nav">
-        <div class="nav-container">
-            <a href="/pages/home.html" class="nav-item">
-                <i data-lucide="home" stroke-width="2"></i>
-                <span>Início</span>
-            </a>
-            
-            <a href="/pages/pei.html" class="nav-item">
-                <i data-lucide="target" stroke-width="2"></i>
-                <span>PEI</span>
-            </a>
-            
-            <a href="#" class="nav-item active">
-                <i data-lucide="book-open" stroke-width="2"></i>
-                <span>Estudos</span>
-            </a>
-            
-            <a href="/pages/relatorios.html" class="nav-item">
-                <i data-lucide="bar-chart-2" stroke-width="2"></i>
-                <span>Relatórios</span>
-            </a>
-            
-            <a href="/pages/perfil.html" class="nav-item">
-                <i data-lucide="user" stroke-width="2"></i>
-                <span>Perfil</span>
-            </a>
-        </div>
+      <div class="nav-container">
+        <a href="/pages/home.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Início</span>
+        </a>
+        <a href="/pages/pei.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <circle cx="12" cy="12" r="6" />
+            <circle cx="12" cy="12" r="2" />
+          </svg>
+          <span>PEI</span>
+        </a>
+        <a href="#" class="nav-item active">
+          <svg viewBox="0 0 24 24">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+          </svg>
+          <span>Estudos</span>
+        </a>
+        <a href="/pages/relatorios.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" y1="20" x2="18" y2="10" />
+            <line x1="12" y1="20" x2="12" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="14" />
+          </svg>
+          <span>Relatórios</span>
+        </a>
+        <a href="/pages/perfil.html" class="nav-item">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span>Perfil</span>
+        </a>
+      </div>
     </nav>
-    
-    <script>
-        lucide.createIcons();
-    </script>
-</section> 
-    
-
-</body>
+  </body>
 </html>
