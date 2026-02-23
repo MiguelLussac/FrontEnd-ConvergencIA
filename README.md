@@ -33,7 +33,8 @@ Ferramenta utilizada: Trello
 🔗 Link do quadro:
 https://trello.com/seu-quadro-aqui
 
-## 📅 [Planejamento Semanal](https://www.figma.com/board/LmrUK4OD2YLkV5m1wYaFw2/Quadro-de-Planejamento---Converg%C3%AAncIA?node-id=0-1&p=f)
+## 📅  Planejamento Semanal 
+- [Planejamento Semanal](https://www.figma.com/board/LmrUK4OD2YLkV5m1wYaFw2/Quadro-de-Planejamento---Converg%C3%AAncIA?node-id=0-1&p=f)
 
 ## ⚠️ Mapeamento de Riscos
 | Risco                       | Impacto | Responsável   | Plano de Contingência          |
