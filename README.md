@@ -51,7 +51,7 @@ https://trello.com/seu-quadro-aqui
 - Simulação de API (mock ou localStorage)
 
 ### Semana 4
--Testes
+- Testes
 - Ajustes finais
 - Deploy da aplicação
 
