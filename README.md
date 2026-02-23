@@ -49,8 +49,8 @@ Ferramenta utilizada: Trello
 - [ ] Testes realizados
 - [ ] Sem erros no console
 - [ ] Funcionalidade validada pelo QA
-- [ ] Documentação atualizada
 - [ ] Deploy funcionando
+- [ ] Testado em pelo menos 2 navegadores
 
 ## 🎨 Protótipo
 
