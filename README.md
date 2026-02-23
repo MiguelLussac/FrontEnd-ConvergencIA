@@ -13,18 +13,19 @@
 
 ## 🎯 Papéis e Responsabilidades
 
-| Membro                           | Papel                   | Responsabilidades                               |
-| -------------------------------- | ----------------------- | ----------------------------------------------- |
-| Abraão Filipi Dos Santos         | Product Owner           | Definição de requisitos, priorização do backlog |
-| Aquiles Pereira Dos Santos       | Scrum Master            | Organização das sprints, acompanhamento do time |
-| Arthur Abelardo Campos Da Costa  | Desenvolvedor Front-end | Interface do usuário                            |
-| Danilo Gabriel Diniz E Silva     | Desenvolvedor Back-end  | API e regras de negócio                         |
-| Lucas Aprigio Dos Santos         | Desenvolvedor Front-end | Componentes e responsividade                    |
-| Marcio Aureliano Pedro Da Silva  | Desenvolvedor Back-end  | Banco de dados e integrações                    |
-| Miguel Pereira De Lemos          | UX/UI Designer          | Protótipo e experiência do usuário              |
-| Miguel Victor Lussac Barboza     | QA                      | Testes e validação de qualidade                 |
-| Pedro Pessôa De Albuquerque Neto | DevOps                  | Versionamento, deploy e CI/CD                   |
-| Thayna Vercosa De Andrade        | Analista de Requisitos  | Documentação e levantamento de requisitos       |
+| Membro                           | Papel                             | Responsabilidades                                                         |
+| -------------------------------- | --------------------------------- | ------------------------------------------------------------------------- |
+| Abraão Filipi Dos Santos         | Product Owner                     | Definir funcionalidades do app, priorizar backlog e validar entregas      |
+| Aquiles Pereira Dos Santos       | Scrum Master                      | Organizar sprints, acompanhar progresso e remover impedimentos            |
+| Arthur Abelardo Campos Da Costa  | Front-end Developer (UI)          | Implementação das telas principais                                        |
+| Danilo Gabriel Diniz E Silva     | Front-end Developer (Lógica)      | Gerenciamento de estado e regras da aplicação                             |
+| Lucas Aprigio Dos Santos         | Front-end Developer (Componentes) | Criação de componentes reutilizáveis                                      |
+| Marcio Aureliano Pedro Da Silva  | Front-end Developer (Integração)  | Integração entre páginas, rotas e simulação de dados (mock/localStorage)  |
+| Miguel Pereira De Lemos          | UX/UI Designer                    | Protótipo no Figma, design system e experiência do usuário                |
+| Miguel Victor Lussac Barboza     | QA (Quality Assurance)            | Testes funcionais, validação de responsividade e checklist de qualidade   |
+| Pedro Pessôa De Albuquerque Neto | DevOps Front-end                  | Configuração do repositório, versionamento (Git), deploy (Vercel/Netlify) |
+| Thayna Vercosa De Andrade        | Analista de Requisitos            | Documentação funcional, histórias de usuário e critérios de aceitação     |
+
 
 ## 📊 Quadro de Gerenciamento das Atividades
 Ferramenta utilizada: Trello
@@ -45,8 +46,9 @@ https://trello.com/seu-quadro-aqui
 - Desenvolvimento do cadastro e login
 
 ### Semana 3 
-- Implementação do CRUD de tarefas
-- Integração com banco de dados
+- Implementação das funcionalidades principais
+- Gerenciamento de estado (Context API / Redux se usar)
+- Simulação de API (mock ou localStorage)
 
 ### Semana 4
 -Testes
