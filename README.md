@@ -31,7 +31,7 @@
 Ferramenta utilizada: Trello
 
 🔗 Link do quadro:
-https://trello.com/seu-quadro-aqui
+- [Trello](https://trello.com/b/tZ4Yz2jZ/converg%C3%AAncia)
 
 ## 📅  Planejamento Semanal 
 - [Planejamento Semanal](https://www.figma.com/board/LmrUK4OD2YLkV5m1wYaFw2/Quadro-de-Planejamento---Converg%C3%AAncIA?node-id=0-1&p=f)
