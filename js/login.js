@@ -82,7 +82,7 @@ function handleLogin() {
     btn.disabled = true;
     btn.textContent = "Entrando…";
     setTimeout(() => {
-        window.location.href = "/FrontEnd-ConvergencIA/pages/home.html";
+        window.location.href = "pages/home.html";
     }, 1200);
 }
 
@@ -110,7 +110,7 @@ function handleRegister() {
     btn.disabled = true;
     btn.textContent = "Cadastrando…";
     setTimeout(() => {
-        window.location.href = "/FrontEnd-ConvergencIA/pages/home.html";
+        window.location.href = "pages/home.html";
     }, 1400);
 }
 
