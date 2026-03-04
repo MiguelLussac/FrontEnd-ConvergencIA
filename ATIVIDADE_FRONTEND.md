@@ -34,8 +34,6 @@
 |--------|-----------|--------|
 | **Linguagem** | HTML5, CSS3, JavaScript (Vanilla) | ES6+ |
 | **Estilização** | CSS modular (por página) | - |
-| **Backend** | Python (FastAPI/Flask) | - |
-| **Servidor** | A definir | - |
 
 #### Organização do Código:
 ```
@@ -59,7 +57,6 @@ Padrão adotado:
 | Semana 1 | Estrutura inicial + Login | Screenshot + Código no GitHub |
 | Semana 2 | Home + Navegação básica | Vídeo navegando + PR #X |
 | Semana 3 | PEI funcional | Demo ao vivo + PR #Y |
-| Semana 4 | ... | ... |
 
 **Método de comprovação:**
 - [ ] Screenshot das telas funcionando
