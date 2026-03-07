@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatórios - Plataforma Educacional</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="../assets/relatorios.css">
@@ -15,240 +17,276 @@
 
 <body>
     <!-- Header -->
-   <div class="header">
-    <div class="header-content">
-        <div class="header-left">
-            <h1>Relatórios</h1>
-            <p>Acompanhamento e evolução</p>
-
+    <header>
+        <div class="header-esquerda">
+            <h1>Relatórios 📊</h1>
+            <p>Acompanhamento e evolução de Maria</p>
+        </div>
+        <div class="header-direita">
             <div class="filter-buttons">
                 <button class="filter-btn">Semana</button>
                 <button class="filter-btn active">Mês</button>
                 <button class="filter-btn">Trimestre</button>
             </div>
-        </div>
-
-        <div class="header-right">
-            <button class="icon-btn">
-                <i class="fa-solid fa-share-nodes"></i>
+            <button class="icones-header">
+                <i data-lucide="share-2" stroke-width="1.5"></i>
             </button>
-            <button class="icon-btn">
-                <i class="fa-solid fa-download"></i>
+            <button class="icones-header">
+                <i data-lucide="download" stroke-width="1.5"></i>
             </button>
         </div>
-    </div>
-</div>
+    </header>
 
     <!-- Main Content -->
-    <div class="container">
+    <main>
+        <!-- Banner IA -->
+        <section class="banner-ia">
+            <div class="caixa-icone-ia">
+                <i data-lucide="sparkles" size="24" stroke-width="1.5"></i>
+            </div>
+            <div class="sugestao-ia">
+                <h2>Insights da IA</h2>
+                <p>Maria demonstrou excelente progresso em leitura este mês! Recomendamos intensificar exercícios de matemática para equilibrar o desenvolvimento.</p>
+                <button class="botao-sugestao-ia">Ver recomendações detalhadas</button>
+            </div>
+        </section>
+
         <!-- Metrics Grid -->
         <div class="metrics-grid">
-            <!-- Evolução Geral -->
             <div class="metric-card">
-                <div class="metric-label">
-                    <span class="metric-icon">📈</span>
-                    Evolução Geral
+                <div class="metric-icon-wrapper blue">
+                    <i data-lucide="trending-up" stroke-width="2"></i>
                 </div>
-                <div id="evol" class="metric-value">+18%</div>
-                <div class="metric-change">Comparativo anterior</div>
+                <div class="metric-content">
+                    <span class="metric-label">Evolução Geral</span>
+                    <strong id="evol" class="metric-value">+18%</strong>
+                    <span class="metric-change positive">vs. período anterior</span>
+                </div>
             </div>
 
-            <!-- Metas Alcançadas -->
             <div class="metric-card">
-                <div class="metric-label">
-                    <span class="metric-icon">🎯</span>
-                    Metas Alcançadas
+                <div class="metric-icon-wrapper purple">
+                    <i data-lucide="target" stroke-width="2"></i>
                 </div>
-                <div id="metas" class="metric-value">12/17</div>
-                <div class="metric-change">Comparativo anterior</div>
+                <div class="metric-content">
+                    <span class="metric-label">Metas Alcançadas</span>
+                    <strong id="metas" class="metric-value">12/17</strong>
+                    <span class="metric-change">70% de conclusão</span>
+                </div>
             </div>
 
-            <!-- Tempo de Estudo -->
             <div class="metric-card">
-                <div class="metric-label">
-                    <span class="metric-icon">⏱️</span>
-                    Tempo de Estudo
+                <div class="metric-icon-wrapper green">
+                    <i data-lucide="clock" stroke-width="2"></i>
                 </div>
-                <div id="tempo" class="metric-value">18h 45m</div>
-                <div class="metric-change">Comparativo anterior</div>
+                <div class="metric-content">
+                    <span class="metric-label">Tempo de Estudo</span>
+                    <strong id="tempo" class="metric-value">18h 45m</strong>
+                    <span class="metric-change positive">+2h vs. anterior</span>
+                </div>
             </div>
 
-            <!-- Engajamento -->
             <div class="metric-card">
-                <div class="metric-label">
-                    <span class="metric-icon">📊</span>
-                    Engajamento
+                <div class="metric-icon-wrapper orange">
+                    <i data-lucide="zap" stroke-width="2"></i>
                 </div>
-                <div id="engaj" class="metric-value">92%</div>
-                <div class="metric-change">Comparativo anterior</div>
+                <div class="metric-content">
+                    <span class="metric-label">Engajamento</span>
+                    <strong id="engaj" class="metric-value">92%</strong>
+                    <span class="metric-change positive">Excelente</span>
+                </div>
             </div>
         </div>
 
         <!-- Progresso por Área -->
-        <div class="progress-section">
-            <h2>Progresso por Área</h2>
-
-            <!-- Leitura -->
-            <div class="progress-item">
-                <div class="progress-header">
-                    <div class="progress-label">
-                        <span class="metric-icon">📖</span>
-                        Leitura
-                    </div>
-                    <div id="leitura" class="progress-percentage">
-                        88% <span>↗</span>
-                    </div>
-                </div>
-                <div class="progress-bar-container">
-                    <div id="leitura-bar" class="progress-bar" style="width: 88%"></div>
-                </div>
-                <div class="progress-info">+12% vs período anterior</div>
+        <section class="card-section">
+            <div class="section-header">
+                <i data-lucide="bar-chart-3" stroke-width="2"></i>
+                <h2>Progresso por Área</h2>
             </div>
 
-            <!-- Escrita -->
-            <div class="progress-item">
-                <div class="progress-header">
-                    <div class="progress-label">
-                        <span class="metric-icon">✏️</span>
-                        Escrita
+            <div class="progress-list">
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-label">
+                            <div class="progress-icon blue">
+                                <i data-lucide="book-open" stroke-width="2"></i>
+                            </div>
+                            <span>Leitura</span>
+                        </div>
+                        <div id="leitura" class="progress-percentage">
+                            88% <span class="trend-up">+12%</span>
+                        </div>
                     </div>
-                    <div id="escrita" class="progress-percentage">
-                        75% <span>↗</span>
+                    <div class="progress-bar-container">
+                        <div id="leitura-bar" class="progress-bar blue" style="width: 88%"></div>
                     </div>
                 </div>
-                <div class="progress-bar-container">
-                    <div id="escrita-bar" class="progress-bar" style="width: 75%; background: linear-gradient(90deg, #48bb78 0%, #38a169 100%);"></div>
-                </div>
-                <div class="progress-info">+8% vs período anterior</div>
-            </div>
 
-            <!-- Matemática -->
-            <div class="progress-item">
-                <div class="progress-header">
-                    <div class="progress-label">
-                        <span class="metric-icon">📐</span>
-                        Matemática
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-label">
+                            <div class="progress-icon green">
+                                <i data-lucide="pencil" stroke-width="2"></i>
+                            </div>
+                            <span>Escrita</span>
+                        </div>
+                        <div id="escrita" class="progress-percentage">
+                            75% <span class="trend-up">+8%</span>
+                        </div>
                     </div>
-                    <div id="matematica" class="progress-percentage">
-                        82% <span>↗</span>
+                    <div class="progress-bar-container">
+                        <div id="escrita-bar" class="progress-bar green" style="width: 75%"></div>
                     </div>
                 </div>
-                <div class="progress-bar-container">
-                    <div id="matematica-bar" class="progress-bar" style="width: 82%; background: linear-gradient(90deg, #9f7aea 0%, #805ad5 100%);"></div>
-                </div>
-                <div class="progress-info">+15% vs período anterior</div>
-            </div>
 
-            <!-- Organização -->
-            <div class="progress-item">
-                <div class="progress-header">
-                    <div class="progress-label">
-                        <span class="metric-icon">📋</span>
-                        Organização
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-label">
+                            <div class="progress-icon purple">
+                                <i data-lucide="calculator" stroke-width="2"></i>
+                            </div>
+                            <span>Matemática</span>
+                        </div>
+                        <div id="matematica" class="progress-percentage">
+                            82% <span class="trend-up">+15%</span>
+                        </div>
                     </div>
-                    <div id="organizacao" class="progress-percentage">
-                        70% <span>↗</span>
+                    <div class="progress-bar-container">
+                        <div id="matematica-bar" class="progress-bar purple" style="width: 82%"></div>
                     </div>
                 </div>
-                <div class="progress-bar-container">
-                    <div id="organizacao-bar" class="progress-bar" style="width: 70%; background: linear-gradient(90deg, #ed64a6 0%, #d53f8c 100%);"></div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-label">
+                            <div class="progress-icon orange">
+                                <i data-lucide="clipboard-list" stroke-width="2"></i>
+                            </div>
+                            <span>Organização</span>
+                        </div>
+                        <div id="organizacao" class="progress-percentage">
+                            70% <span class="trend-up">+10%</span>
+                        </div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div id="organizacao-bar" class="progress-bar orange" style="width: 70%"></div>
+                    </div>
                 </div>
-                <div class="progress-info">+10% vs período anterior</div>
             </div>
-        </div>
+        </section>
 
         <!-- Atividade Mensal -->
-        <div class="section-container">
-            <div class="activity-section">
-                <h2>📅 Atividade Mensal</h2>
-                <div class="chart-container">
-                    <div class="chart">
-                        <div class="bar-wrapper">
-                            <div class="bar-item">
-                                <div class="bar" style="height: 40%;" title="Semana 1"></div>
-                                <span class="bar-label">Sem 1</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 65%;" title="Semana 2"></div>
-                                <span class="bar-label">Sem 2</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 55%;" title="Semana 3"></div>
-                                <span class="bar-label">Sem 3</span>
-                            </div>
-                            <div class="bar-item">
-                                <div class="bar" style="height: 75%;" title="Semana 4"></div>
-                                <span class="bar-label">Sem 4</span>
-                            </div>
+        <section class="card-section">
+            <div class="section-header">
+                <i data-lucide="calendar" stroke-width="2"></i>
+                <h2>Atividade Mensal</h2>
+            </div>
+            <div class="chart-container">
+                <div class="chart">
+                    <div class="bar-wrapper">
+                        <div class="bar-item">
+                            <div class="bar" style="height: 40%;" title="Semana 1"></div>
+                            <span class="bar-label">Sem 1</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 65%;" title="Semana 2"></div>
+                            <span class="bar-label">Sem 2</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 55%;" title="Semana 3"></div>
+                            <span class="bar-label">Sem 3</span>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar" style="height: 75%;" title="Semana 4"></div>
+                            <span class="bar-label">Sem 4</span>
                         </div>
                     </div>
-                    <div class="chart-info">Tempo médio diário: 2h 15m</div>
+                </div>
+                <div class="chart-info">
+                    <i data-lucide="info" size="14" stroke-width="2"></i>
+                    Tempo médio diário: 2h 15m
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Conquistas Recentes -->
-        <div class="section-container">
-            <div class="achievements-section">
-                <h2>🏆 Conquistas Recentes</h2>
-                <div class="achievements-list">
-                    <div class="achievement-item">
-                        <div class="achievement-item-icon">🎯</div>
-                        <div class="achievement-item-content">
-                            <h3>Semana Perfeita</h3>
-                            <p>Completou todas as atividades de segunda a sexta</p>
-                        </div>
-                        <span class="badge badge-new">Nova</span>
+        <section class="card-section">
+            <div class="section-header">
+                <i data-lucide="trophy" stroke-width="2"></i>
+                <h2>Conquistas Recentes</h2>
+            </div>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon">
+                        <i data-lucide="award" stroke-width="2"></i>
                     </div>
-                    <div class="achievement-item">
-                        <div class="achievement-item-icon">📚</div>
-                        <div class="achievement-item-content">
-                            <h3>Leitura Diária</h3>
-                            <p>5 dias seguidos praticando leitura</p>
-                        </div>
+                    <div class="achievement-content">
+                        <h3>Semana Perfeita</h3>
+                        <p>Completou todas as atividades de segunda a sexta</p>
+                    </div>
+                    <span class="badge badge-new">Nova</span>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon purple">
+                        <i data-lucide="book" stroke-width="2"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Leitura Diária</h3>
+                        <p>5 dias seguidos praticando leitura</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon green">
+                        <i data-lucide="flame" stroke-width="2"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Sequência de Fogo</h3>
+                        <p>10 atividades corretas consecutivas</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Observações do Professor -->
-        <div class="section-container">
-            <div class="observations-section">
-                <h2>👨‍🏫 Observações do Professor</h2>
-                <div class="observations-list">
-                    <div class="observation-item">
+        <section class="card-section">
+            <div class="section-header">
+                <i data-lucide="message-square" stroke-width="2"></i>
+                <h2>Observações dos Professores</h2>
+            </div>
+            <div class="observations-list">
+                <div class="observation-item">
+                    <div class="observation-avatar">AS</div>
+                    <div class="observation-content">
                         <div class="observation-header">
-                            <div class="professor-info">
-                                <h3>Prof. Ana Silva</h3>
-                            </div>
+                            <h3>Prof. Ana Silva</h3>
                             <span class="observation-date">15 Nov 2025</span>
                         </div>
-                        <p class="observation-text">"Maria tem demonstrado grande evolução na leitura. Sua concentração melhorou significativamente com as pausas programadas."</p>
+                        <p>"Maria tem demonstrado grande evolução na leitura. Sua concentração melhorou significativamente com as pausas programadas."</p>
                     </div>
-                    <div class="observation-item">
+                </div>
+                <div class="observation-item">
+                    <div class="observation-avatar purple">CM</div>
+                    <div class="observation-content">
                         <div class="observation-header">
-                            <div class="professor-info">
-                                <h3>Prof. Carlos Mendes</h3>
-                            </div>
+                            <h3>Prof. Carlos Mendes</h3>
                             <span class="observation-date">10 Nov 2025</span>
                         </div>
-                        <p class="observation-text">"Excelente progresso em matemática. As ferramentas visuais estão ajudando muito na compreensão de frações."</p>
+                        <p>"Excelente progresso em matemática. As ferramentas visuais estão ajudando muito na compreensão de frações."</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Export Button -->
-            <div class="section-container" style="margin-bottom: 100px;">
-                <button class="export-btn">
-                    <i class="fa-solid fa-download"></i>
-                    Exportar Relatório Completo (PDF)
-                </button>
-        </div>
-    </div>
+        <button class="export-btn">
+            <i data-lucide="download" stroke-width="2"></i>
+            Exportar Relatório Completo (PDF)
+        </button>
+    </main>
 
-    <section class="navbar">
-        <nav class="bottom-nav">
+    <!-- Navbar -->
+    <nav class="bottom-nav">
         <div class="nav-container">
             <a href="./home.html" class="nav-item">
                 <i data-lucide="home" stroke-width="2"></i>
@@ -274,21 +312,17 @@
                 <i data-lucide="user" stroke-width="2"></i>
                 <span>Perfil</span>
             </a>
-            <script>
-                lucide.createIcons();
-            </script>
         </div>
     </nav>
-    </section>
-    
 
     <script>
+        lucide.createIcons();
+
         // Interatividade dos botões de filtro
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 this.classList.add('active');
-                // Chama a função correta
                 if(this.textContent.includes('Semana')) exibir_sem();
                 else if(this.textContent.includes('Mês')) exibir_mes();
                 else if(this.textContent.includes('Trimestre')) exibir_tri();
@@ -298,9 +332,8 @@
         // Evento do botão de exportar PDF
         document.querySelector('.export-btn').addEventListener('click', function() {
             alert('Relatório em PDF será gerado e baixado em breve...');
-            // Aqui você poderia adicionar a lógica real para gerar o PDF
         });
     </script>
-<script src="../js/relatorios.js"></script>
+    <script src="../js/relatorios.js"></script>
 </body>
 </html>
