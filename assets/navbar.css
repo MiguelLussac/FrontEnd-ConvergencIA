@@ -36,6 +36,11 @@
             font-weight: 500;
         }
 
+        .nav-item i, .nav-item svg {
+            width: 24px;
+            height: 24px;
+        }
+
         .nav-item:hover {
             color: #4da0d6; /* Fica azul ao passar o mouse */
         }
@@ -45,3 +50,19 @@
             background-color: #f0f7fb; /* Fundo azul bem clarinho */
             color: #4da0d6; /* Texto e ícone azuis */
         }
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    .nav-container {
+        gap: 8px; /* Reduz o espaço entre os itens */
+        padding: 8px 10px; /* Reduz o padding interno */
+    }
+
+    .nav-item {
+        padding: 8px 10px; /* Reduz o padding dos itens */
+    }
+
+    .nav-item span {
+        display: none; /* Oculta o texto, mostrando apenas os ícones */
+    }
+}
