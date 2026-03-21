@@ -45,12 +45,12 @@ Ferramenta utilizada: Trello
 | Indisponibilidade de membro | Médio   | Scrum Master  | Redistribuição de tarefas      |
 
 ## ✅ Checklist de Qualidade (Definição de Pronto)
-- [ ] Código revisado por outro membro
-- [ ] Testes realizados
-- [ ] Sem erros no console
-- [ ] Funcionalidade validada pelo QA
-- [ ] Deploy funcionando
-- [ ] Testado em pelo menos 2 navegadores
+- [x] Código revisado por outro membro
+- [x] Testes realizados
+- [x] Sem erros no console
+- [x] Funcionalidade validada pelo QA
+- [x] Deploy funcionando
+- [x] Testado em pelo menos 2 navegadores
 
 ## 🎨 Protótipo
 
