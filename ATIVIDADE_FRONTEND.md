@@ -145,10 +145,10 @@ Padrão adotado:
 
 | # | Tarefa | Responsável | Estimativa | Critério |
 |---|--------|-------------|------------|----------|
-| 1 | **Finalizar integração Login + Backend** | [Nome] | P (2h) | MVP + Bloqueio anterior |
-| 2 | **Implementar tela PEI completa** | [Nome] | G (8h) | MVP + Alto valor |
+| 1 | **Finalizar integração Login + Backend** | [Danilo] | P (2h) | MVP + Bloqueio anterior |
+| 2 | **Implementar tela PEI completa** | [Miguel; Danilo] | G (8h) | MVP + Alto valor |
 | 3 | **Criar sistema de autenticação (localStorage/session)** | [Nome] | M (4h) | MVP + Dependência |
-| 4 | **Desenvolver tela de Estudos** | [Nome] | M (5h) | MVP |
+| 4 | **Desenvolver tela de Estudos** | [Miguel; Danilo] | M (5h) | MVP |
 | 5 | **Adicionar validação de formulários** | [Nome] | P (3h) | Risco + UX |
 
 **Legenda:** P (Pequeno) = 1-3h | M (Médio) = 4-6h | G (Grande) = 7-10h
